@@ -26,8 +26,7 @@ header{
     margin: auto;
 }
 header .logo img{
-    width: 350px;
-    
+    width: 50%;
 }
 
 header nav ul{
@@ -72,7 +71,7 @@ header nav ul li a.active{
     margin-top: 20px;
 }
 .introbox .image img{
-    height: 300px;
+    height: 100%;
 }
 .introboxdesc{
     width: 100%;
@@ -142,8 +141,7 @@ span{
     box-shadow: 3px 3px 5px #ddd,inset 3px 3px 5px #fff;
 }
 .food .itembox .image img{
-    height: 200px;
-    width: 300px;
+    width: 100%;
 }
 
 .food .itembox .name p{
@@ -187,6 +185,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #0f0034;
 }
 footer .resturantInfo{
     backdrop-filter: blur(7px);
@@ -208,4 +207,30 @@ footer .resturantInfo .heading{
     font-family: monospace;
     font-weight: bold;
     margin-top: 1.5em;
+}
+
+@media(max-width: 1100px){
+    .aboutPage .aboutDesc{
+        flex-direction: column;
+    }
+    .introbox .image{
+        height: 300px;
+        width: 300px;
+    }
+    .introbox .image img{
+        height: 90%;
+    }
+}
+
+@media(max-width: 1000px){
+    .aboutPage .aboutDesc{
+        flex-direction: column;
+    }
+    .introbox .image{
+        height: 270px;
+        width: 270px;
+    }
+    .introbox .image img{
+        height: 85%;
+    }
 }
