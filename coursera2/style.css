@@ -1,0 +1,211 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    background-color: #0f0034;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: crimson;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    background: #eee;
+}
+header{
+    position: relative;
+    width: 90%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+}
+header .logo img{
+    width: 350px;
+    
+}
+
+header nav ul{
+    display: flex;
+}
+header nav ul li{
+    list-style: none;
+}
+header nav ul li a{
+    margin-right: 50px;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: monospace;
+    color: #000;
+    transition: 0.5s;
+}
+header nav ul li a:hover{
+    color: rgb(255, 0, 115);
+}
+
+header nav ul li a.active{
+    color: rgb(255, 0, 115);
+}
+.introbox{
+    position: relative;
+    height: 30vh;
+    width: 100%;
+    background-color:#222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.introbox .image{
+    height: 350px;
+    width: 350px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.introbox .image img{
+    height: 300px;
+}
+.introboxdesc{
+    width: 100%;
+    margin-top: 30px;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+}
+.banner img{
+    width: 100%;
+}
+.heading{
+    margin-top: 40px;
+    padding-left: 30px;
+}
+.heading h1{
+    color: #222;
+    font-size: 55px;
+    color: rgb(30, 30, 30);
+}
+span{
+    color: rgb(255, 36, 94);
+}
+
+.Ourmenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.table{
+    width: 60%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.table table tr th,.table table tr td{
+    padding: 20px;
+    background: #ddd;
+    width: 200px;
+    font-size: 20px;
+    font-family: monospace;
+}
+.table table tr td:nth-child(even){
+    color: crimson;
+}
+
+.food{
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.food .itembox{
+    padding: 20px;
+    height: 350px;
+    width: 350px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #ddd,inset 3px 3px 5px #fff;
+}
+.food .itembox .image img{
+    height: 200px;
+    width: 300px;
+}
+
+.food .itembox .name p{
+    font-family: monospace;
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.food .itembox .desc p{
+    font-size: 18px;
+    text-align: center;
+}
+
+.aboutPage .aboutDesc{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.aboutPage .aboutDesc .text{
+    width: 560px;
+
+}
+.aboutPage .aboutDesc .text p{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.aboutPage .aboutDesc .image img{
+    height: 400px;
+}
+
+footer{
+    height: 50vh;
+    margin-top: 20px;
+    background-image: url("./images/footer.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .resturantInfo{
+    backdrop-filter: blur(7px);
+    height: 100%;
+    width: 100%;
+    background-color: #00000053;
+}
+footer .resturantInfo p{
+    color: #fff;
+    text-align: center;
+    width: 60%;
+    font-size: 22px;
+    margin: 20px auto;
+}
+footer .resturantInfo .heading{
+    color: #fff;
+    font-size: 4em;
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    margin-top: 1.5em;
+}
